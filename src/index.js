@@ -1,13 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import App from './App'
+import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
+import App from './App'
 
-ReactDOM.render(
+createRoot(document.getElementById('root')).render(
 	<BrowserRouter>
 		<App />
-	</BrowserRouter>,
-	document.getElementById('root')
+	</BrowserRouter>
 )
