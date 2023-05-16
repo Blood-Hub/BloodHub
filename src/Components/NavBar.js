@@ -14,12 +14,27 @@ const NavBar = () => {
 					<ul className='navbar-nav ml-auto'>
 						<li className='nav-item'>
 							<Link to='/bloodcenters' className='nav-link'>
-								Blood Centers
+								Where to donate
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link to='/benefits' className='nav-link'>
-								Benefits
+							<Link to='/why-give-blood' className='nav-link'>
+								Why give Blood
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link to='/who-can-give-blood' className='nav-link'>
+								Who can give blood
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link to='/eligibility' className='nav-link'>
+								Eligibility Quiz
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link to='/donation-process' className='nav-link'>
+								The donation process
 							</Link>
 						</li>
 						{/* Add more navigation links as needed */}
