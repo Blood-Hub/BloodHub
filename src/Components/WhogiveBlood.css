@@ -1,0 +1,102 @@
+/* style using class to avoid styling conflicts */
+.head{
+  margin-left:20%;
+  display: inline-block;
+}
+.head img{
+  float:left;
+  margin-left: 5%;
+  width:100px;
+
+
+}
+.head h1{
+ color:#C50000;
+ margin: 2% 0;
+}
+.head button {
+  background-color:#E70000;
+  border:none;
+  border-radius: 4px;
+  color:#FFFDEF;
+  box-shadow: 5px 5px 2px #aaaaaa;
+  padding:1%;
+  margin:1%;
+
+}
+.head button:hover {
+  height:45px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.head p{
+  font-size: 20px;
+  padding:5%;
+}
+
+.criteria{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+  margin-bottom:10%;
+  margin-right: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 75px;
+  padding: 5px;
+  margin-top:5%;
+  
+
+}
+.criteria:hover{
+  border: 2px solid #E70000;
+}
+
+.criteria1,.criteria3,.criteria5,.criteria7,.criteria9{
+  margin-left:25%;
+  float: left;
+  width: 10%;
+ 
+}
+
+.criteria2,.criteria4,.criteria6,.criteria8,.criteria10{
+  margin-right: 30%;
+  float: right;
+  width: 10%;
+}
+.criteria-content{
+  position: absolute;
+  bottom: 0;
+  right: 0;  
+  background:#E70000;
+  color: #FFFDEF;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 10px 8px 5px #aaaaaa;
+  /* list-style-image: url("../img/blooddrop.png"); */
+}
+/* .criteria-content ul li::before {
+  font-size: 1px;
+}  */
+/* trying to have image for list style */
+
+.criteria:hover {
+  cursor: pointer;
+}
+
+.criteria:hover div {
+  width:30vw;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.criteria h2{
+  font-size: 20px;
+}

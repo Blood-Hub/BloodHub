@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Quizquestions} from './Quizquestions';
 
-const Eligibility = () => {
+
+function Eligibility() {
+  const [currentQ,setCurrentQ]= useState(0);
+  const [selectedA, setSelectedA]= useState('');
+ 
+
   return (
-    <div>Eligibility</div>
+    <div>
+     <h1>Quiz</h1>
+     <p>{Quizquestions[currentQ].question}</p> 
+    </div>
   )
 }
 
-export default Eligibility
+export default  Eligibility
