@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //import MyChart from './Chart';
-import '../styles/Statistic.css';
+import '../pages/styles/Statistic.css';
 import ChartComponent from "./Chart.js";
 
 
@@ -12,7 +12,7 @@ function compareNumbers(a, b) {
   return a - b;
 }
 
-const WhygiveBlood = () => {
+const Statistic = () => {
   const [data, setData] = useState([]);
   const [series] = useState(['North', 'South', 'Midlands', 'Eastern', 'Western']);
   const [labels] = useState(['2023', '2022', '2021', '2020', '2019']);
@@ -196,6 +196,4 @@ const Charts = ({ data, labels, colors, height, opaque, grouping, horizontal, on
   );
 };
 
-
-
-export default WhygiveBlood
+export default Statistic;
