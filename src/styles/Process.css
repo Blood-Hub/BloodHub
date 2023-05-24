@@ -1,0 +1,170 @@
+:root {
+    --lighten: rgba(181, 138, 138, 0.7);
+    --darken: rgb(231, 0, 0);
+  }
+  
+  /* body {
+    background: var(--lighten);
+  } */
+  .image-text{
+    min-width: 423px;
+    margin-right: -833px;
+    font-size: 1.4rem;
+    color: rgb(53, 25, 25);
+    text-align: center;
+    margin-top: 200px;
+   
+  }
+  .bg-img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    position: absolute;
+    background-size: cover !important;
+  }
+  
+  .bg-img.fade-bg {
+    animation: fade-bg 1000ms 1 ease-in;
+  }
+  
+  .app {
+    z-index: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel {
+    display: flex;
+    padding: 4vh;
+    background: var(--lighten);
+    border-radius: 2px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vh;
+    margin-right: 600px;
+    gap: 183px;
+    
+  }
+  
+  .image img {
+    max-width: 60vh;
+    border-radius: 2px;
+    z-index: 10;
+    position: absolute;
+    border-radius: 13%;
+    margin-right: 30px;
+  
+  }
+  
+  .image img.shadow {
+    position: relative;
+    z-index: 0;
+    filter: blur(20px);
+    top: 20px;
+  }
+  
+  .image.fade {
+    animation: fadeIn 1000ms 1 ease-in;
+  }
+  
+  .controls {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 3vw;
+    margin-left: -603px;
+    margin-top: -240px;
+    
+  }
+  
+  .controls.stretch-controls {
+    animation: stretch-controls 500ms 1 cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  
+  }
+  
+  .controls li {
+    min-width: 1.5vw;
+    height: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    background: transparent;
+    border-top: 1px solid var(--darken);
+    border-left: 1px solid var(--darken);
+    background: transparent;
+    margin-left: -50px;
+    padding: 23px;
+    border-radius: 0 23px;
+    color: rgb(255, 253, 239);
+    font-size: 1.3rem;
+  }
+  
+  .controls li.selected {
+    background: var(--darken);
+  }
+  
+  .controls li:focus {
+    outline: none;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+      transform: translateX(-5vw);
+    }
+    60% {
+      transform: translateX(0vw);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-bg {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes stretch-controls {
+    0% {
+      height: 87vh;
+      opacity: 0;
+    }
+    50% {
+      height: 67vh;
+    }
+    100% {
+      height: 87vh;
+      opacity: 1;
+    }
+  }

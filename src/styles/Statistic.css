@@ -1,0 +1,200 @@
+.statistic{
+    /* background-image: linear-gradient(to bottom right, red, rgb(245, 245, 197)); */
+    /* height: 100vh;
+    margin-top: 160px; */
+    background-image: url('../img/heart.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top: 90px;
+    padding: 30px;
+
+}
+.text-statistic{
+    color: #fcfcfc;
+    text-align: center;
+    margin-bottom: -350px;
+    padding: 20px;
+    font-size: 2rem;
+}
+.bank{
+    text-align: center;
+    margin-top: 190px;
+    margin-bottom: -60px;
+    color: white;
+    font-size: 2rem;
+    
+}
+.Charts {
+    margin-top: 18em;
+    background-image: linear-gradient(to bottom right, rgb(245, 45, 45), rgb(245, 245, 197));
+    border-radius: 25px;
+    margin-left: 22em;
+    box-shadow: 0 24px 18px 0 rgba(131, 90, 90, 0.2), 0 16px 30px 0 rgba(139, 35, 35, 0.19);
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+    width: 62%;
+    height: 30%;
+    margin-bottom: 1px;
+  }
+  .Charts--serie {
+    height: 80%;
+    margin: 0 40px 0 0;
+    display: inline-block;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    transform-origin: 0 100%;
+    animation: slideUp .6s;
+    position: relative;
+    border-bottom: 5px dashed #e61f1f;
+  }
+  
+  .Charts--serie.stacked {
+    display: block;
+  }
+  
+  .Charts--serie label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -33px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f10404;
+    
+  }
+  .Legend{
+    margin-top:-42px;
+    float: right;
+    display:flex;
+    padding-right: 463px;
+    }
+  
+  .Charts--item {
+    display: inline-block;
+    margin: 2px 4px 19px -8px;
+    flex: 1;
+    transition: height 1s ease-out, width 1s ease-out;
+    position: relative;
+    text-align: center;
+    border-radius: 2px 2px 0 0;
+    
+  }
+  
+  .Charts--item.layered {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    margin: 0;
+
+  }
+
+
+  .Legend--color {
+    display: inline-block;
+    vertical-align:bottom;
+    border-radius: 2px;
+    border: 2px solid rgb(186, 157, 157);
+    width: 20px;
+    height: 26px;
+    padding-left: 2px;
+    margin-left: 13px;
+    
+  }
+  
+  .Legend--label {
+    display:inline-flex;
+    vertical-align: middle;
+    font-size: 1rem;
+    margin: 0 0 0 5px;
+    
+  }
+  .Charts--label-text{
+      color: rgb(45, 45, 5);
+      padding: 1px;
+      margin: 2px;
+  }
+ 
+ .info {
+    position: relative;
+    color: #fcfcfc;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    padding: 23px;
+    margin: -660px 450px 40px;
+    font-size: 1.6rem;
+    transform: translateY(-10px);
+    background-image: url('../img/main.jpeg');
+    box-shadow: 0 24px 58px 10px rgba(28, 2, 2, 0.2), 0 26px 50px 0 rgba(32, 1, 1, 0.19);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: scroll;
+    animation: slide-in 1s backwards;
+		opacity: 0.9;
+    filter: grayscale(10%);
+  }
+
+  .info p {
+    /* background-color: rgba(131, 88, 88, 0.6); */
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+  :last-child {
+    animation-delay: .4s;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+  
+  .info:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+  }
+  
+  .info p {
+    /* background-color: rgba(131, 88, 88, 0.6); */
+    border-radius: 12px;
+    padding: 10px;
+  }
+  
+  .info1 {
+    color: rgb(255, 250, 250);
+   
+  }
+  .info:hover {
+    animation: hover-animation 0.5s;
+}
+
+@keyframes hover-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
