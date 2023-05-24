@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar } from 'react-bootstrap'
+import '../styles/NavBar.css'
 
 const NavBar = () => {
 	return (
-		<Navbar bg='dark' variant='dark' expand='lg'>
+		<Navbar
+			expand='lg'
+			className='navbar-transparent'
+			style={{ marginTop: '20px' }}>
 			<div className='container'>
 				<Link to='/' className='navbar-brand'>
 					Blood Hub
