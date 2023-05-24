@@ -1,0 +1,26 @@
+.navbar-transparent {
+	background-color: transparent !important;
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 18px;
+  white-space: nowrap; /* Add this line to prevent line breaks */
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.nav-link:hover {
+  color: #e70000;
+  font-size: 23px;
+  animation: neonEffect 1s alternate infinite;
+}
+
+@keyframes neonEffect {
+  0% {
+    text-shadow: 0 0 10px #e70000, 0 0 20px #e70000, 0 0 30px #e70000;
+  }
+  100% {
+    text-shadow: 0 0 5px #e70000, 0 0 10px #e70000, 0 0 20px #e70000;
+  }
+}

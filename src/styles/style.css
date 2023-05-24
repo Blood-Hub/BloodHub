@@ -1,0 +1,21 @@
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-logo {
+  font-size: 60px;
+  margin-right: 10px;
+}
+
+.text-logo:hover {
+  color: red;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s, fill 0.3s;
+  vertical-align: middle;
+}
+
