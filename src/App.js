@@ -12,7 +12,7 @@ import Landing from './Components/Landing'
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Landing from './Components/Landing'
+
 
 function App() {
 	return (
