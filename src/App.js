@@ -8,9 +8,11 @@ import WhogiveBlood from './Components/WhogiveBlood'
 import Eligibility from './Components/Eligibility'
 import DonationProcess from './Components/DonationProcess'
 import Footer from './Components/Footer'
+import Landing from './Components/Landing'
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Landing from './Components/Landing'
 
 function App() {
 	return (
@@ -18,7 +20,10 @@ function App() {
 			<NavBar />
 
 			<Routes>
-				<Route path='/' element={<Home />} />
+				
+				
+				<Route path='/' element={<Landing />} />
+				<Route path='/home' element={<Home />} />
 				<Route path='/bloodcenters' element={<BloodCenters />} />
 				<Route path='/why-give-blood' element={<WhygiveBlood />} />
 				<Route path='/who-can-give-blood' element={<WhogiveBlood />} />
