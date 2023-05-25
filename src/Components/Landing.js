@@ -5,11 +5,12 @@ import videoBG from '../videos/bgvideo.mp4';
 // import bloodDrop from '../pages1/blood-drop.svg';
 // import Spinner from '../pages1/Spinner';
 
-const Landing = () => {
+const Landing = ({ navigateToWhy }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/bloodcenters');
+    navigate('/home');
+    navigateToWhy();
   };
 
   return (

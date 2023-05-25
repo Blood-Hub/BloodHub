@@ -10,7 +10,7 @@ const NavBar = () => {
 			className='navbar-transparent'
 			style={{ marginTop: '20px' }}>
 			<div className='container'>
-				<Link to='/' className='navbar-brand'>
+				<Link to='/home' className='navbar-brand'>
 					Blood Hub
 				</Link>
 				<Navbar.Toggle aria-controls='navbarNav' />
