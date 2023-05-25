@@ -72,25 +72,10 @@ const Footer = () => {
 								<a href='/'>Contrast</a>
 							</li>
 						</ul>
-					</div>
-				</div>
-			</div>
-			<div className='footer-bottom'>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-lg-6 d-flex justify-content-center align-items-center'>
-							<a href='#' className='me-3'>
-								<i className='fab fa-facebook-f'></i>
-							</a>
-							<a href='#' className='me-3'>
-								<i className='fab fa-twitter'></i>
-							</a>
-							<a href='#'>
-								<i className='fab fa-instagram'></i>
-							</a>
-						</div>
-						<div className='col-lg-6 d-flex justify-content-center'>
-							<small className='text-center' style={{ whiteSpace: 'nowrap', marginLeft: '150px'  }}>
+						<div
+							className='col-lg-6 d-flex align-items-center justify-content-center'
+							style={{ marginTop: '50px', marginRight: '200px' }}>
+							<small className='text-center' style={{ whiteSpace: 'nowrap' }}>
 								&copy; BloodHub, 2023. All rights reserved.
 							</small>
 						</div>

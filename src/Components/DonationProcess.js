@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/Process.css";
-import First from "../img/first.jpeg";
+import First from '../img/first.jpeg'
 import Groups from "../img/groups.jpeg";
 import Life from "../img/life.jpeg";
 import Donation from "../img/dination.jpeg";
