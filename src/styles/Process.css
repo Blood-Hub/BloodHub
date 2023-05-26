@@ -11,7 +11,7 @@
     min-width: 423px;
     margin-right: -833px;
     font-size: 1.4rem;
-    color: rgb(53, 25, 25);
+    color: rgb(242, 225, 225);
     text-align: center;
     margin-top: 200px;
    
@@ -40,7 +40,7 @@
   .carousel {
     display: flex;
     padding: 4vh;
-    background: var(--lighten);
+    /* background: var(--lighten); */
     border-radius: 2px;
     position: relative;
     width: 100vw;

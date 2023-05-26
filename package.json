@@ -10,8 +10,8 @@
     "@mui/material": "^5.13.0",
     "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.1",
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.16",
     "google-map-react": "^2.2.1",
@@ -50,6 +50,19 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.11.2"
-  }
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@testing-library/react": "^14.0.0",
+    "babel-jest": "^29.5.0",
+    "enzyme": "^3.11.0",
+    "jest": "^27.5.1",
+    "react-router-dom": "^6.11.2",
+    "react-test-renderer": "^18.2.0"
+  },
+  "description": "BloodHub Project Deliverables and Presentation Details",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
