@@ -1,9 +1,9 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 .container-location {
     margin-top: 200px;
@@ -84,7 +84,7 @@ input.caret {
     padding: 10px;
     font-size: 25px;
     border: 3px solid rgba(247, 5, 5, 0.494);
-    /* transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
     border-radius: 10px;
     z-index: 10;
     overflow: hidden;
@@ -116,6 +116,14 @@ input.caret {
     color: #111;
 }
 
+.bgimage {
+
+    background-size: 100%;
+    background-position: center right;
+
+    background-repeat: no-repeat;
+
+}
 
 
 .map-container {
@@ -133,9 +141,9 @@ input.caret {
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 80px;
-    /* Add margin to the left */
+
     margin-top: 50px;
-    /* Adjust the margin-top value as needed */
+
 }
 
 
@@ -152,16 +160,15 @@ input.caret {
     background-color: #fff;
     border: 3px solid rgba(247, 5, 5, 0.494);
     padding: 20px;
-    /* Increase padding for more space inside the card */
+
     max-width: 500px;
     max-height: 500px;
 
-    /* Add margin-left to create space between the map and blood center info */
-    /* Add additional styling for a card-like appearance */
+
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.298);
     border-radius: 8px;
     overflow: auto;
-    /* Add scrollbars if content exceeds the card height */
+
 
     margin-top: 80px;
 }
@@ -171,8 +178,8 @@ input.caret {
     margin: 0;
     margin-right: 200px;
     font-size: 35px;
-    /* Increase font size for the heading */
-    /* color: #0c09ce; */
+
+
 }
 
 /* .blood-center-info-window h2 {
@@ -186,7 +193,7 @@ input.caret {
 */ .blood-center-info-window p {
     margin: 0;
     font-size: 20px;
-    /* Increase font size for the paragraphs */
+
     color: #555;
 }
 

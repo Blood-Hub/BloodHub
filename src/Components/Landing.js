@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Landing.css'
-import videoBG from '../videos/bgvideo.mp4'
-import { CSSTransition } from 'react-transition-group'
+import videoBG from '../videos/bgvideo.mp4';
+
 // import bloodDrop from '../pages1/blood-drop.svg';
 // import Spinner from '../pages1/Spinner';
 
@@ -64,16 +64,17 @@ const handleClick = () => {
 					</div>
 					<div className='right-col-landing'>
 						<div className='button-wrapper-landing'>
-							<CSSTransition
+							{/* <CSSTransition
 								in={!isFadeOut}
 								timeout={1000}
 								classNames='fade'
 								unmountOnExit>
-								<button className='enter-site' onClick={handleClick}>
-									<h4>Enter</h4>
-								</button>
-							</CSSTransition>
+								
+							</CSSTransition> */}
 							{/* <Spinner /> */}
+							<button className='enter-site' onClick={handleClick}>
+								<h4>Enter</h4>
+							</button>
 						</div>
 					</div>
 				</div>

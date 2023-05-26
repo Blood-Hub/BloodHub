@@ -1,9 +1,9 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: rgb(29, 27, 27);
-}
+} */
 
 .icon-container-landing {
     position: relative;
@@ -42,6 +42,7 @@
 
 
 
+
 .container-landing {
     font-size: 50px;
     display: flex;
@@ -52,19 +53,30 @@
 
 }
 
+
+.container {
+
+    width: 100%;
+    height: 100%;
+}
+
+
 .left-col-landing {
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-    /* Add space between left-col and right-col */
+
 }
 
+
 .left-col-landing p {
+    font-size: 40px;
     color: whitesmoke;
 }
 
 .left-col-landing h1 {
     color: whitesmoke;
+     font-size: 90px;
 }
 
 .right-col-landing {
@@ -173,11 +185,13 @@
     height: 100vh;
 }
 
+
 .container-landing {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 
 .video-landing {
     position: absolute;
