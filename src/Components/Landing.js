@@ -69,11 +69,12 @@ const handleClick = () => {
 								timeout={1000}
 								classNames='fade'
 								unmountOnExit>
-								<button className='enter-site' onClick={handleClick}>
-									<h4>Enter</h4>
-								</button>
+								
 							</CSSTransition> */}
 							{/* <Spinner /> */}
+							<button className='enter-site' onClick={handleClick}>
+								<h4>Enter</h4>
+							</button>
 						</div>
 					</div>
 				</div>
