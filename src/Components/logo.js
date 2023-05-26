@@ -9,9 +9,9 @@ const Logo = () => {
 					BLO
 					<svg
 						className='icon icon-large'
-						fill='#000000'
-						height='800px'
-						width='800px'
+						fill='#E70000'
+						height='20px'
+						width='50px'
 						version='1.1'
 						id='Layer_1'
 						viewBox='0 0 226.194 226.194'>

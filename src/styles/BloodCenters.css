@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 } */
 
-.container1 {
+.container-location {
     margin-top: 200px;
 
 }
@@ -226,7 +226,7 @@ input.caret {
     position: relative;
 }
 
-.blood-center-locator .overlay {
+.blood-center-locator .overlay-location {
     position: fixed;
     top: 0;
     left: 0;
@@ -253,7 +253,7 @@ input.caret {
     }
 }
 
-.container1 {
+.container-location {
     animation: growIn 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     transform: scale(.4);
 }

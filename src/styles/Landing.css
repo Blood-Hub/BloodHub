@@ -5,7 +5,7 @@
     color: rgb(29, 27, 27);
 } */
 
-.icon-container {
+.icon-container-landing {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,27 +13,27 @@
     margin-top: 50px;
 }
 
-.icon-container .slide-in {
+.icon-container-landing .slide-in {
     position: relative;
     left: 100%;
     animation: slideIn 1s forwards;
 }
 
 
-.icon-container .slide-in:hover {
+.icon-container-landing .slide-in:hover {
     color: rgba(249, 246, 246, 0.684)
 }
 
 
 
-.icon {
+.icon-landing {
     width: 100px;
     height: 100px;
     transition: transform 0.3s, fill 0.3s;
     vertical-align: middle;
 }
 
-.icon-container:hover .icon {
+.icon-container-landing:hover .icon {
     fill: red;
 
     transform: scale(1.2) translateY(-3%);
@@ -42,9 +42,14 @@
 
 
 
+<<<<<<< HEAD
 .container {
 
     /* font-size: 50px; */
+=======
+.container-landing {
+    font-size: 50px;
+>>>>>>> main
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +58,7 @@
 
 }
 
+<<<<<<< HEAD
 .container {
 
     width: 100%;
@@ -60,12 +66,16 @@
 }
 
 .left-col {
+=======
+.left-col-landing {
+>>>>>>> main
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
 
 }
 
+<<<<<<< HEAD
 .left-col p {
     font-size: 40px;
     color: whitesmoke;
@@ -73,10 +83,17 @@
 
 .left-col h1 {
     font-size: 90px;
+=======
+.left-col-landing p {
     color: whitesmoke;
 }
 
-.right-col {
+.left-col-landing h1 {
+>>>>>>> main
+    color: whitesmoke;
+}
+
+.right-col-landing {
     position: relative;
     display: flex;
     justify-content: center;
@@ -84,7 +101,7 @@
     margin-top: 50px;
 }
 
-.button-wrapper {
+.button-wrapper-landing {
     position: relative;
 }
 
@@ -173,18 +190,26 @@
 
 
 
-.moving-text {
-    animation: dropText 1s ease-in-out;
+.moving-text-landing {
+    animation: dropText 3s ease-in-out;
 }
 
-.main {
+.main-landing {
     width: 100%;
     height: 100vh;
 }
 
+<<<<<<< HEAD
 
+=======
+.container-landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+>>>>>>> main
 
-video {
+.video-landing {
     position: absolute;
     top: 0;
     left: 0;
@@ -193,7 +218,7 @@ video {
     object-fit: cover;
 }
 
-.overlay {
+.overlay-landing {
     position: absolute;
     top: 0;
     left: 0;
@@ -202,7 +227,30 @@ video {
     background-color: rgba(172, 53, 53, 0.1);
 }
 
-.content-wrapper {
+.content-wrapper-landing {
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
+=======
+}
+
+/* Rest of your styles... */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+>>>>>>> main
 }
