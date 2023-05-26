@@ -70,11 +70,13 @@
 
 
 .left-col-landing p {
+    font-size: 40px;
     color: whitesmoke;
 }
 
 .left-col-landing h1 {
     color: whitesmoke;
+     font-size: 90px;
 }
 
 .right-col-landing {
