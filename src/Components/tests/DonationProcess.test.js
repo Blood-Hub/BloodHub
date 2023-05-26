@@ -7,14 +7,20 @@ describe('DonationProcess', () => {
     const { container } = render(<DonationProcess />);
     const nextButton = container.querySelector('.next-button');
 
-    fireEvent.click(nextButton);
+    // Check if the nextButton element exists
+    if (nextButton) {
+      fireEvent.click(nextButton);
 
-    expect(container.getAttribute('data-current-img')).toBe('First');
-    expect(container.getAttribute('data-fade')).toBe('true');
+      expect(container.getAttribute('data-current-img')).toBe(images[4]);
+      expect(container.getAttribute('data-fade')).toBe('true');
 
-    fireEvent.click(nextButton);
+      fireEvent.click(nextButton);
 
-    expect(container.getAttribute('data-current-img')).toBe('Hero');
-    expect(container.getAttribute('data-fade')).toBe('true');
+      expect(container.getAttribute('data-current-img')).toBe(images[5]);
+      expect(container.getAttribute('data-fade')).toBe('true');
+    } else {
+      // Handle the case when nextButton is not found
+      throw new Error('Unable to find element with class "next-button"');
+    }
   });
 });
