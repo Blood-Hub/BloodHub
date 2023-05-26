@@ -1,6 +1,5 @@
-import './App.css'
 import React, { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
 import BloodCenters from './Components/LocationBloodCenters'
@@ -14,28 +13,35 @@ import Landing from './Components/Landing'
 function App() {
 	const [isLandingPage, setIsLandingPage] = useState(true)
 
-	const navigateToWhy = () => {
+	const navigateToHome = () => {
 		setIsLandingPage(false)
 	}
 
 	return (
 		<div>
-			{isLandingPage ? (
-				<Landing navigateToWhy={navigateToWhy} />
-			) : (
-				<>
-					<NavBar />
-					<Routes>
-						<Route path='/home' element={<Home />} />
-						<Route path='/bloodcenters' element={<BloodCenters />} />
-						<Route path='/why-give-blood' element={<WhygiveBlood />} />
-						<Route path='/who-can-give-blood' element={<WhogiveBlood />} />
-						<Route path='/eligibility' element={<Eligibility />} />
-						<Route path='/donation-process' element={<DonationProcess />} />
-					</Routes>
-					<Footer />
-				</>
-			)}
+			{!isLandingPage && <NavBar />}
+			<Routes>
+				<Route path='/' element={<Landing navigateToHome={navigateToHome} />} />
+				{!isLandingPage && <Route path='/home' element={<Home />} />}
+				{!isLandingPage && (
+					<Route path='/bloodcenters' element={<BloodCenters />} />
+				)}
+				{!isLandingPage && (
+					<Route path='/why-give-blood' element={<WhygiveBlood />} />
+				)}
+				{!isLandingPage && (
+					<Route path='/who-can-give-blood' element={<WhogiveBlood />} />
+				)}
+				{!isLandingPage && (
+					<Route path='/eligibility' element={<Eligibility />} />
+				)}
+				{!isLandingPage && (
+					<Route path='/donation-process' element={<DonationProcess />} />
+				)}
+				<Route path='*' element={<Navigate to='/' />} />
+			</Routes>
+
+			{!isLandingPage && <Footer />}
 		</div>
 	)
 }

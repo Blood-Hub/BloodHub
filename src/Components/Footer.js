@@ -17,7 +17,7 @@ const Footer = () => {
 						</p>
 					</div>
 					<div className='col-lg-3'>
-						<p className='h5 mb-4' style={{ fontWeight: '600' }}>
+						<p className='h5 mb-4' style={{ fontWeight: '10' }}>
 							Devwares
 						</p>
 						<ul
