@@ -141,10 +141,10 @@ return (
         </g>
       </svg> */}
   </div>
-  <div className="overlay"></div>
-  <div className="overlay1"></div>
+  <div className="overlay-location"></div>
+  <div className="overlay-locator"></div>
 
-    <div className="container1">
+    <div className="container-location">
       <div className="main-content">
         <h2 className='h2-text'>Blood Donation location Finder</h2>
         <div className="form-container">
@@ -205,4 +205,3 @@ return (
 };
 
 export default BloodCenters;
-
