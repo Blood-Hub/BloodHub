@@ -40,7 +40,7 @@
   .carousel {
     display: flex;
     padding: 4vh;
-    background: var(--lighten);
+    /* background: var(--lighten); */
     border-radius: 2px;
     position: relative;
     width: 100vw;

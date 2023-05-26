@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Landing.css'
 import videoBG from '../videos/bgvideo.mp4';
@@ -64,7 +64,7 @@ const handleClick = () => {
 					</div>
 					<div className='right-col-landing'>
 						<div className='button-wrapper-landing'>
-							<CSSTransition
+							{/* <CSSTransition
 								in={!isFadeOut}
 								timeout={1000}
 								classNames='fade'
@@ -72,7 +72,7 @@ const handleClick = () => {
 								<button className='enter-site' onClick={handleClick}>
 									<h4>Enter</h4>
 								</button>
-							</CSSTransition>
+							</CSSTransition> */}
 							{/* <Spinner /> */}
 						</div>
 					</div>
