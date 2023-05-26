@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/BloodCenters.css'
+import '../styles/Landing.css'
 import videoBG from '../videos/bgvideo.mp4';
 // import bloodDrop from '../pages1/blood-drop.svg';
 // import Spinner from '../pages1/Spinner';
