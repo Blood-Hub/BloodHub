@@ -8,12 +8,14 @@ import hospital01 from '../videos/hospital01.mp4'
 import hospital03 from '../videos/hospital03.mp4'
 import { CSSTransition } from 'react-transition-group'
 import { useLocation } from 'react-router-dom'
+// import bloodcute from '../img/handsblood.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 	const settings = {
 		dots: true,
 		infinite: true,
-		speed: 4000,
+		speed: 3000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
@@ -59,8 +61,13 @@ const Home = () => {
 									<source src={hospital01} type='video/mp4' />
 								</video>
 								<div className='slide-content-home'>
-									<h2>Donate Blood: Be a Hero, Save Lives Today! </h2>
+									<h2>Donate Blood: Be a Hero, Save Lives Today </h2>
 									<p> Every drop counts, every donation matters</p>
+									<Link to='/bloodcenters'>
+										<button className='custom-button-home'>
+											Donate Here
+										</button>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -79,8 +86,14 @@ const Home = () => {
 									<source src={hospital03} type='video/mp4' />
 								</video>
 								<div className='slide-content-home'>
-									<h2>Donate Blood: Be a Hero, Save Lives Today! </h2>
+									<h2>Donate Blood: Be a Hero, Save Lives Today </h2>
 									<p> Join us and be a part of the lifesaving journey.</p>
+
+									<Link to='/bloodcenters'>
+										<button className='custom-button-home'>
+											Donate Here
+										</button>
+									</Link>
 								</div>
 							</div>
 						</div>

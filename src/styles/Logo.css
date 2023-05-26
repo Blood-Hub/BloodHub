@@ -1,71 +1,76 @@
 .body1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  padding-top: 50px;
+	margin-top: -120px;
+	margin-left: -50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: -80px;
 }
 
 .icon-container {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  position: relative;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
 }
 
 .text-logo {
-  font-size: 60px;
-  margin-right: 10px;
-  color: #f1f1f1;
-  text-shadow: 0 0 10px #e70000, 0 0 20px #e70000, 0 0 30px #e70000;
-  animation: neonGlow 1.5s ease-in-out infinite alternate;
-  transition: transform 0.3s;
+	font-family: 'Cutive Mono', sans-serif;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: 600;
+	margin-right: 50px;
+	margin-left: 10px;
+	color: #000000;
+	text-shadow: 0 0 10px #ff2020, 0 0 20px #e70000, 0 0 30px #e70000;
+	animation: neonGlow 1.5s ease-in-out infinite;
 }
 
 .icon {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.3s, fill 0.3s;
-  vertical-align: middle;
+	width: 50px;
+	height: 30px;
+	transition: transform 0.3s, fill 0.3s;
+	vertical-align: middle;
 }
 
 .icon-container:hover .icon {
-  fill: #e70000;
-  transform: scale(1.2) translateY(-3%);
+	fill: #e70000;
+	transform: scale(1.2) translateY(-3%);
 }
 
 .icon-container:hover .text-logo {
-  animation: neonGlowHover 1.5s ease-in-out infinite alternate;
+	animation: neonGlowHover 1.5s ease-in-out infinite alternate;
 }
 
 .heartbeat {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #e70000;
-  opacity: 0.6;
-  animation: heartbeat 1.5s infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #e70000;
+	opacity: 0.6;
+	animation: heartbeat 1.5s infinite;
 }
 
 @keyframes neonGlow {
-  0% {
-    text-shadow: 0 0 10px #e70000, 0 0 20px #e70000, 0 0 30px #e70000;
-  }
-  100% {
-    text-shadow: 0 0 20px #e70000, 0 0 40px #e70000, 0 0 60px #e70000;
-  }
+	0% {
+		text-shadow: 0 0 10px #e70000, 0 0 20px #e70000, 0 0 30px #e70000;
+	}
+	100% {
+		text-shadow: 0 0 20px #e70000, 0 0 40px #e70000, 0 0 60px #e70000;
+	}
 }
 
 @keyframes neonGlowHover {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }

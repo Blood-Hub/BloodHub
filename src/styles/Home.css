@@ -60,3 +60,30 @@
     width: 100%;
   }
 }
+
+.custom-button-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFFDEF;
+  border: none;
+  border-radius: 50px;
+  color: #C50000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.custom-button-home:hover {
+  background-color: #F1F1F1;
+  color: #E70000;
+}
+
+.custom-button-home:focus {
+  outline: none;
+}
+
+.custom-button-home:active {
+  transform: translateY(2px);
+}
