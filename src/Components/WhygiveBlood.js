@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 //import MyChart from './Chart';
 import '../styles/Statistic.css';
+//import { Chart } from 'chart.js';
 import ChartComponent from "./Chart.js";
-
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -71,7 +71,7 @@ const WhygiveBlood = () => {
            
               <h4>The Rh system</h4>
                 <p> Red blood cells sometimes have another antigen, a protein known as the RhD antigen. If this is present, your blood group is RhD positive. If it's absent, your blood group is RhD negative. This means you can be 1 of 8 blood groups: </p>
-                <lu>
+                <ul>
                   <li>A RhD positive (A+)</li>
                   <li>A RhD positive (A-)</li>
                   <li>A RhD positive (B+)</li>
@@ -80,19 +80,19 @@ const WhygiveBlood = () => {
                   <li>A RhD positive (0-)</li>
                   <li>A RhD positive (AB+)</li>
                   <li>A RhD positive (AB-)</li>
-                </lu>
+                </ul>
               <p>About 85% of the UK population is RhD positive (35% of the population has O+, the most common type). In most cases, O RhD negative blood (O-) can safely be given to anyone. It's often used in medical emergencies when the blood type is not immediately known. It's safe for most recipients because it does not have any A, B or RhD antigens on the surface of the cells, and is compatible with every other ABO and RhD blood group.</p>
               <ChartComponent className="more"/>
             </div>
             <div className='info1'>
               <h4>Key Facts</h4>
                 <p>
-                  <lu>
+                  <ul>
                     <li>Of the 118.5 million blood donations collected globally, 40% of these are collected in high-income countries, home to 16% of the world’s population.</li>
                     <li>In low-income countries, up to 54 % of blood transfusions are given to children under 5 years of age; whereas in high-income countries, the most frequently transfused patient group is over 60 years of age, accounting for up to 76% of all transfusions.</li>
                     <li>Based on samples of 1000 people, the blood donation rate is 31.5 donations in high-income countries, 16.4 donations in upper-middle-income countries, 6.6 donations in lower-middle-income countries and 5.0 donations in low-income countries.</li>
                     <li>The volume of plasma for fractionation per 1000 population varied considerably between the 45 reporting countries, ranging from 0.1 to 52.6 litres, with a median of 5.2 litres.</li>
-                  </lu>
+                  </ul>
                 </p>
         </div>
         <div className='info1'>

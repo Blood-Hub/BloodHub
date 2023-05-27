@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js';
+
+import { Chart, registerables } from 'chart.js';
+
+
+Chart.register(...registerables);
+
+
 
 
 const ChartComponent = () => {
