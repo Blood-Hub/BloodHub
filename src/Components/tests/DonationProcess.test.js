@@ -1,26 +1,31 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import DonationProcess from '../DonationProcess';
 
+
 describe('DonationProcess', () => {
-  test('nextPhoto updates state correctly', () => {
-    const { container } = render(<DonationProcess />);
-    const nextButton = container.querySelector('.next-button');
+  test('carousel changes on click', () => {
+    render(<DonationProcess />);
 
-    // Check if the nextButton element exists
-    if (nextButton) {
-      fireEvent.click(nextButton);
+   
+    const initialImage = screen.getByAltText('Slideshow Blood Donation');
+    const initialImageSrc = initialImage.src;
+    const initialTextElement = screen.getByTestId('image-text'); 
+    const initialTextContent = initialTextElement.textContent;
 
-      expect(container.getAttribute('data-current-img')).toBe(images[4]);
-      expect(container.getAttribute('data-fade')).toBe('true');
+  
+    userEvent.click(initialImage);
 
-      fireEvent.click(nextButton);
+    
+    const afterClickImage = screen.getByAltText('Slideshow Blood Donation');
+    const afterClickTextElement = screen.getByTestId('image-text');
+    const afterClickTextContent = afterClickTextElement.textContent;
 
-      expect(container.getAttribute('data-current-img')).toBe(images[5]);
-      expect(container.getAttribute('data-fade')).toBe('true');
-    } else {
-      // Handle the case when nextButton is not found
-      throw new Error('Unable to find element with class "next-button"');
-    }
+    
+    expect(afterClickImage.src).not.toBe(initialImageSrc);
+    expect(afterClickTextContent).not.toBe(initialTextContent);
   });
 });
+
+

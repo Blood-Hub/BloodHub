@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-//import MyChart from './Chart';
-import '../styles/Statistic.css';
 import ChartComponent from "./Chart.js";
+import '../styles/Statistic.css';
 
-
-function getRandomInt(min, max) {
+ export function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -21,8 +19,6 @@ const WhygiveBlood = () => {
 
   useEffect(() => {
     populateArray();
-    // const interval = setInterval(populateArray, 8000);
-    // return () => clearInterval(interval);
   }, []);
 
   const populateArray = () => {
@@ -45,72 +41,49 @@ const WhygiveBlood = () => {
 
   const displayAnimationOnce = () => {
     if (!animationDisplayed) {
-      setAnimationDisplayed(false);
+      setAnimationDisplayed(true);
       // Code to trigger the animation
     }
   };
 
   return (
     <>
-        <div className='parallax-empty'>
-        <h2 className='bank '> Statistic</h2>
-        <section className='statistic '>
+      <section className='statistic'>
         <p className="text-statistic">Blood Donation In UK</p>
-        <Charts data={data} labels={series} colors={colors} height={250} onAnimationStart={displayAnimationOnce} />
-       
-        <Legend labels={labels} colors={colors} />
-        
-        </section>
-        </div>
         <div>
-           
+          <Charts data={data} labels={series} colors={colors} height={250} onAnimationStart={displayAnimationOnce} />
+          <Legend labels={labels} colors={colors} />
         </div>
+        <div data-testid="slideshow-placeholder"></div>
 
-        <div className='info'>
-            <div className='infor-content'>
-           
-              <h4 className='whys'>The Rh system</h4>
-                <p> Red blood cells sometimes have another antigen, a protein known as the RhD antigen. If this is present, your blood group is RhD positive. If it's absent, your blood group is RhD negative. This means you can be 1 of 8 blood groups: </p>
-                {/* <ul>
-                  <li>A RhD positive (A+)</li>
-                  <li>A RhD positive (A-)</li>
-                  <li>A RhD positive (B+)</li>
-                  <li>A RhD positive (B-)</li>
-                  <li>A RhD positive (0+)</li>
-                  <li>A RhD positive (0-)</li>
-                  <li>A RhD positive (AB+)</li>
-                  <li>A RhD positive (AB-)</li>
-                </ul> */}
-                <ChartComponent className="more"/>
-              <p>About 85% of the UK population is RhD positive (35% of the population has O+, the most common type). In most cases, O RhD negative blood (O-) can safely be given to anyone. It's often used in medical emergencies when the blood type is not immediately known. It's safe for most recipients because it does not have any A, B or RhD antigens on the surface of the cells, and is compatible with every other ABO and RhD blood group.</p>
-             
-            </div>
-            <div className='info1'>
-              <h4 className='whys'>In Case Of Operation</h4>
-                <p>If you lose a large amount of blood before or during an operation, a red cell transfusion may be needed. A transfusion of platelets, plasma or clotting factors may also be required if any of these components are low or not working properly.</p>
-                  {/* <ul>
-                    <li>Of the 118.5 million blood donations collected globally, 40% of these are collected in high-income countries, home to 16% of the world’s population.</li>
-                    <li>In low-income countries, up to 54 % of blood transfusions are given to children under 5 years of age; whereas in high-income countries, the most frequently transfused patient group is over 60 years of age, accounting for up to 76% of all transfusions.</li>
-                    <li>Based on samples of 1000 people, the blood donation rate is 31.5 donations in high-income countries, 16.4 donations in upper-middle-income countries, 6.6 donations in lower-middle-income countries and 5.0 donations in low-income countries.</li>
-                    <li>The volume of plasma for fractionation per 1000 population varied considerably between the 45 reporting countries, ranging from 0.1 to 52.6 litres, with a median of 5.2 litres.</li>
-                  </ul> */}
-              </div>
-              <div className='infor1'>
-              <h4 className='whys'>Anaemia</h4>
-                      <p>Anaemia is a medical term for low red blood cell count or low haemoglobin. It can be caused by many medical conditions, and it may result in a lack of oxygen to the cells. A red cell transfusion may be required if anaemia becomes severe.</p>
-              </div>
-              <div className='infor1'>
-              <h4 className='whys'>Iron deficiency</h4>
-                      <p>Iron is a mineral nutrient that’s essential for your body to function normally and to make haemoglobin (Hb). If you have iron deficiency, it’s treated by iron replacement therapy and the need for a transfusion is rare.</p>
-              </div>
-              <div className='infor1'>
-              <h4 className='whys'>Bleeding disorders</h4>
-                      <p>Bleeding disorders are a group of conditions where blood can’t clot properly. You may need a transfusion of platelets or plasma products to assist with clotting, or even red cells if the blood loss is severe.</p>
-              </div>
-              <div className='info1'>  
-                  <h4 className='whys'>Which blood types are in demand?</h4>
-                  <p>Some blood types are in higher demand from hospitals than others. For example, it's estimated that around 8% of people have O negative blood, but O negative makes up 13% of requests from hospitals. This is because anyone can receive the red cells from O negative donors. So O negative red cells can be used in emergencies or when a person's blood type in unknown. Sometimes we need to target specific blood types to increase stock levels. That's why we sometimes contact regular donors with the particular blood type we need, and ask them to give blood.</p>
-              </div>
+      </section>
+      <div className='info'>
+        <div className='infor-content'>
+          <h4 className='whys'>The Rh system</h4>
+          <p>Red blood cells sometimes have another antigen, a protein known as the RhD antigen. If this is present, your blood group is RhD positive. If it's absent, your blood group is RhD negative. This means you can be 1 of 8 blood groups:</p>
+          <ChartComponent className="more" />
+          <p>About 85% of the UK population is RhD positive (35% of the population has O+, the most common type). In most cases, O RhD negative blood (O-) can safely be given to anyone. It's often used in medical emergencies when the blood type is not immediately known. It's safe for most recipients because it does not have any A, B or RhD antigens on the surface of the cells and is compatible with every other ABO and RhD blood group.</p>
+        </div>
+        <div className='info1'>
+          <h4 className='whys'>In Case Of Operation</h4>
+          <p>If you lose a large amount of blood before or during an operation, a red cell transfusion may be needed. A transfusion of platelets, plasma or clotting factors may also be required if any of these components are low or not working properly.</p>
+        </div>
+        <div className='infor1'>
+          <h4 className='whys'>Anaemia</h4>
+          <p>Anaemia is a medical term for low red blood cell count or low haemoglobin. It can be caused by many medical conditions, and it may result in a lack of oxygen to the cells. A red cell transfusion may be required if anaemia becomes severe.</p>
+        </div>
+        <div className='infor1'>
+          <h4 className='whys'>Iron deficiency</h4>
+          <p>Iron is a mineral nutrient that’s essential for your body to function normally and to make haemoglobin (Hb). If you have iron deficiency, it’s treated by iron replacement therapy and the need for a transfusion is rare.</p>
+        </div>
+        <div className='infor1'>
+          <h4 className='whys'>Bleeding disorders</h4>
+          <p>Bleeding disorders are a group of conditions where blood can’t clot properly. You may need a transfusion of platelets or plasma products to assist with clotting, or even red cells if the blood loss is severe.</p>
+        </div>
+        <div className='info1'>
+          <h4 className='whys'>Which blood types are in demand?</h4>
+          <p>Some blood types are in higher demand from hospitals than others. For example, it's estimated that around 8% of people have O negative blood, but O negative makes up 13% of requests from hospitals. This is because anyone can receive the red cells from O negative donors. So O negative red cells can be used in emergencies or when a person's blood type is unknown. Sometimes we need to target specific blood types to increase stock levels. That's why we sometimes contact regular donors with the particular blood type we need and ask them to give blood.</p>
+        </div>
       </div>
     </>
   );
@@ -119,13 +92,9 @@ const WhygiveBlood = () => {
 const Legend = ({ labels, colors }) => {
   return (
     <div className="Legend">
-    
       {labels.map((label, labelIndex) => (
         <div key={labelIndex}>
-          <span
-            className="Legend--color"
-            style={{ backgroundColor: colors[labelIndex % colors.length] }}
-          />
+          <span className="Legend--color" style={{ backgroundColor: colors[labelIndex % colors.length] }} />
           <span className="Legend--label">{label}</span>
         </div>
       ))}
@@ -143,11 +112,12 @@ const Charts = ({ data, labels, colors, height, opaque, grouping, horizontal, on
         }
       }
     }
-    return max;
+    return max !== 0 ? max : 1;
   };
 
+  
+
   return (
-      
     <div className={`Charts${horizontal ? ' horizontal' : ''}`} onAnimationStart={onAnimationStart}>
       {data.map((serie, serieIndex) => {
         const sortedSerie = serie.slice(0);
@@ -155,23 +125,21 @@ const Charts = ({ data, labels, colors, height, opaque, grouping, horizontal, on
         sortedSerie.sort(compareNumbers);
 
         return (
-          <div
-            className={`Charts--serie ${grouping}`}
-            key={serieIndex}
-            style={{ height: height ? height : 'auto' }}
-          >
-          
+          <div className={`Charts--serie ${grouping}`} key={serieIndex} style={{ height: height ? height : 'auto' }}>
             <label>{labels[serieIndex]}</label>
             {serie.map((item, itemIndex) => {
               const color = colors[itemIndex];
               let style;
               const size = (item / (grouping === 'stacked' ? sum : getMaxValue())) * 100;
 
+              if (isNaN(item)) {
+                item = ''; // Convert NaN to empty string
+              }
+
               style = {
                 backgroundColor: color,
                 opacity: opaque ? 1 : item / getMaxValue() + 1.19,
                 zIndex: item,
-                
               };
 
               if (horizontal) {
@@ -185,25 +153,20 @@ const Charts = ({ data, labels, colors, height, opaque, grouping, horizontal, on
               }
 
               return (
-                 <div className={`Charts--item ${grouping}`} style={style} key={itemIndex}>
-                 <div className="Charts--label-top">
+                <div className={`Charts--item ${grouping}`} style={style} key={itemIndex}>
+                  <div className="Charts--label-top">
                     <span className="Charts--label-text">%</span>
                     <span className="Charts--label-value">{item}</span>
-                </div>
+                  </div>
                   <b style={{ color: color }}>{item}</b>
-                </div> 
-                
+                </div>
               );
             })}
-            
           </div>
         );
       })}
-      
     </div>
   );
 };
 
-
-
-export default WhygiveBlood
+export default WhygiveBlood;

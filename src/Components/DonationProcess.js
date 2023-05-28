@@ -144,7 +144,7 @@ const Image = ({ img, nextPhoto, currentIndex, fade, imageText }) => (
   >
     <img src={img} alt="Slideshow Blood Donation" />
     <img className="shadow" src={img} alt="Blood Donation" />
-    <p className="image-text">{imageText}</p> 
+    <p className="image-text" data-testid="image-text">{imageText}</p> 
   
   </div>
 );
