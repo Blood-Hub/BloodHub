@@ -1,8 +1,20 @@
+
+
+.nav-icon{
+  color:#e70000;
+  margin-right: 8px;
+}
+
+.nav-text {
+  margin-left: 8px; 
+}
+
 .navbar-transparent {
 	background-color: transparent !important;
 }
 
 .nav-link {
+  
   margin-right: 10px;
   color: #000000;
   font-size: 18px;
@@ -13,14 +25,14 @@
 .nav-link:hover {
   color: #e70000;
   font-size: 23px;
-  animation: neonEffect 1s alternate infinite;
+  /* animation: neonEffect 1s alternate infinite; */
 }
-
+/* 
 @keyframes neonEffect {
   0% {
-    text-shadow: 0 0 10px #e70000, 0 0 20px #e70000, 0 0 30px #e70000;
+    text-shadow: 0 0 1px #e70000, 0 0 2px #e70000, 0 0 3px #e70000;
   }
   100% {
-    text-shadow: 0 0 5px #e70000, 0 0 10px #e70000, 0 0 20px #e70000;
+    text-shadow: 0 0 1px #e70000, 0 0 2px #e70000, 0 0 20px #e70000;
   }
-}
+} */
