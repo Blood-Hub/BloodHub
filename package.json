@@ -2,6 +2,11 @@
   "name": "bloodhub",
   "version": "0.1.0",
   "private": true,
+  "description": "![banner](https://github.com/Blood-Hub/BloodHub/assets/114920895/c368197b-3b84-437d-9c74-0d38478e2a0f)",
+  "main": "babel.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -20,6 +25,7 @@
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.16",
     "google-map-react": "^2.2.1",
+    "jest-environment-jsdom": "^29.5.0",
     "mapbox-gl": "^1.13.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
@@ -35,7 +41,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -63,13 +69,21 @@
     "jest": "^27.5.1",
     "react-router-dom": "^6.11.2",
     "react-slick": "^0.29.0",
+    "react-test-renderer": "^18.2.0",
     "react-transition-group": "^4.4.5"
   },
-
   "jest": {
-  "transform": {
-    "^.+\\.jsx?$": "babel-jest"
-  }
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy",
+             "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__Mocks__/mock-file.js"
+         
+           }
+          }
+          
+        
 }
-
-}
+       
+  
