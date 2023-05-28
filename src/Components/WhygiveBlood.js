@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import ChartComponent from "./Chart.js";
 import '../styles/Statistic.css';
+import ChartComponent from "./Chart.js";
+
+
 
  export function getRandomInt(min, max) {
+
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -84,6 +87,55 @@ const WhygiveBlood = () => {
           <h4 className='whys'>Which blood types are in demand?</h4>
           <p>Some blood types are in higher demand from hospitals than others. For example, it's estimated that around 8% of people have O negative blood, but O negative makes up 13% of requests from hospitals. This is because anyone can receive the red cells from O negative donors. So O negative red cells can be used in emergencies or when a person's blood type is unknown. Sometimes we need to target specific blood types to increase stock levels. That's why we sometimes contact regular donors with the particular blood type we need and ask them to give blood.</p>
         </div>
+
+        <div className='info'>
+            <div className='infor-content'>
+           
+              <h4 className='whys'>The Rh system</h4>
+                <p> Red blood cells sometimes have another antigen, a protein known as the RhD antigen. If this is present, your blood group is RhD positive. If it's absent, your blood group is RhD negative. This means you can be 1 of 8 blood groups: </p>
+
+                <ChartComponent className="more"/>
+              <p>About 85% of the UK population is RhD positive (35% of the population has O+, the most common type). In most cases, O RhD negative blood (O-) can safely be given to anyone. It's often used in medical emergencies when the blood type is not immediately known. It's safe for most recipients because it does not have any A, B or RhD antigens on the surface of the cells, and is compatible with every other ABO and RhD blood group.</p>
+             
+            </div>
+            <div className='info1'>
+              <h4>Key Facts</h4>
+                <p>
+                
+
+              <h4 className='whys'>In Case Of Operation</h4>
+                <p>If you lose a large amount of blood before or during an operation, a red cell transfusion may be needed. A transfusion of platelets, plasma or clotting factors may also be required if any of these components are low or not working properly.</p>
+                
+                </p>
+        </div>
+        <div className='info1'>
+              <h4>Blood Donors</h4>
+              <h5>Age and Gender of Blood Donors</h5>
+                <p>Data about the gender profile of blood donors show that globally 33% of blood donations are given by women, although this ranges widely. In 15 of the 113 reporting countries, less than 10% of donations are given by female donors.</p>
+                <p>The age profile of blood donors shows that, proportionally, more young people donate blood in low- and middle-income countries than in high-income countries. Demographic information of blood donors is important for formulating and monitoring recruitment strategies.</p>
+              <h4>Which blood types are in demand?</h4>
+                <p>Some blood types are in higher demand from hospitals than others. For example, it's estimated that around 8% of people have O negative blood, but O negative makes up 13% of requests from hospitals. This is because anyone can receive the red cells from O negative donors. So O negative red cells can be used in emergencies or when a person's blood type in unknown. Sometimes we need to target specific blood types to increase stock levels. That's why we sometimes contact regular donors with the particular blood type we need, and ask them to give blood.</p>
+        </div>
+
+              </div>
+              <div className='infor1'>
+              <h4 className='whys'>Anaemia</h4>
+                      <p>Anaemia is a medical term for low red blood cell count or low haemoglobin. It can be caused by many medical conditions, and it may result in a lack of oxygen to the cells. A red cell transfusion may be required if anaemia becomes severe.</p>
+              </div>
+              <div className='infor1'>
+              <h4 className='whys'>Iron deficiency</h4>
+                      <p>Iron is a mineral nutrient that’s essential for your body to function normally and to make haemoglobin (Hb). If you have iron deficiency, it’s treated by iron replacement therapy and the need for a transfusion is rare.</p>
+              </div>
+              <div className='infor1'>
+              <h4 className='whys'>Bleeding disorders</h4>
+                      <p>Bleeding disorders are a group of conditions where blood can’t clot properly. You may need a transfusion of platelets or plasma products to assist with clotting, or even red cells if the blood loss is severe.</p>
+              </div>
+              <div className='info1'>  
+                  <h4 className='whys'>Which blood types are in demand?</h4>
+                  <p>Some blood types are in higher demand from hospitals than others. For example, it's estimated that around 8% of people have O negative blood, but O negative makes up 13% of requests from hospitals. This is because anyone can receive the red cells from O negative donors. So O negative red cells can be used in emergencies or when a person's blood type in unknown. Sometimes we need to target specific blood types to increase stock levels. That's why we sometimes contact regular donors with the particular blood type we need, and ask them to give blood.</p>
+              </div>
+
+
       </div>
     </>
   );
