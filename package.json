@@ -41,8 +41,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -67,9 +66,6 @@
     "jest-dom": "^4.0.0",
     "match-media-mock": "^0.1.1",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "babel-jest": "^29.5.0",
-    "jest": "^27.5.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "react-slick": "^0.29.0",
