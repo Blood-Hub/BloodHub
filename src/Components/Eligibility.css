@@ -1,7 +1,7 @@
 .quizbody {
   text-align: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: 'Roboto', sans-serif;
   /* border: 1.5px dotted black; */
   padding: 2% 0;
@@ -22,13 +22,15 @@
 }
 
 .quizbody input[type="radio"] {
+  justify-content: space-between;
+  padding: 15px;
   margin-right: 7px;
 }
 
 .quizbody button {
   background-color: #e70000;
   color: #F1F1F1;
-  margin-top: 3%;
+  margin-top: 10%;
   padding: 12px 24px;
   font-size: 18px;
   border-radius: 50px;

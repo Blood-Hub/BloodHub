@@ -35,7 +35,7 @@ const Home = () => {
 			<header>
 				<div className='header-banner'>
 					<Routes>
-						<Route path='/home' />
+					<Route path='/home' element={<div />} />
 					</Routes>
 				</div>
 			</header>
@@ -85,14 +85,22 @@ const Home = () => {
 									}}>
 									<source src={hospital03} type='video/mp4' />
 								</video>
-								<div className='slide-content-home'>
-									<h2>Donate Blood: Be a Hero, Save Lives Today </h2>
+								<div className='slide-content-home' data-testid="h2-test">
+									<h2 >Donate Blood: Be a Hero, Save Lives Today </h2>
 									<p> Join us and be a part of the lifesaving journey.</p>
 
 									<Link to='/bloodcenters'>
-										<button className='custom-button-home'>
-											Donate Here
-										</button>
+									<button className='custom-button-home' data-testid='custom-button-home'>
+  Donate Here
+</button>
+
+
+
+
+
+
+
+
 									</Link>
 								</div>
 							</div>

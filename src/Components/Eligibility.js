@@ -118,7 +118,7 @@ const Quiz = () => {
             <br/>
             <br/>
           Please keep in mind that other eligibility requirements may apply and that this checker only covered the most common reasons why people cannot donate blood.</p>
-          <button onClick={handleRestartQuiz}>Restart Quiz</button>
+          <button  onClick={handleRestartQuiz}>Restart Quiz</button>
         </div>
       )}
     </div>
