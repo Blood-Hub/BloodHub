@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { Chart, registerables } from 'chart.js';
 
 
-//Chart.register(...registerables);
+Chart.register(...registerables);
 
 const ChartComponent = () => {
   const chartRef = useRef(null);
@@ -62,4 +62,3 @@ const ChartComponent = () => {
 };
 
 export default ChartComponent;
-
