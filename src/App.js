@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
-import BloodCenters from './Components/LocationBloodCenters'
+import BloodCenters from './Components/BloodCenters'
 import WhygiveBlood from './Components/WhygiveBlood'
 import WhogiveBlood from './Components/WhogiveBlood'
 import Eligibility from './Components/Eligibility'
@@ -22,7 +22,7 @@ function App() {
 			{!isLandingPage && <NavBar />}
 			<Routes>
 				<Route path='/' element={<Landing navigateToHome={navigateToHome} />} />
-				{!isLandingPage && <Route path='/home' element={<Home />} />}
+				{!isLandingPage && <Route path='/home/*' element={<Home />} />}
 				{!isLandingPage && (
 					<Route path='/bloodcenters' element={<BloodCenters />} />
 				)}
